@@ -1,0 +1,90 @@
+body{
+    text-align: center;
+    /* position: relative; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.smiley{
+    /* margin: 10px; */
+    /* width: 100%; */
+    height: 100%;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: large;
+    background-color:  white;
+    border: 0px;
+    font-size: xx-large;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    /* display: block; */
+    
+}
+.gameInfo{
+    border: 3px solid darkred;
+    /* width: 7000px; */
+    height: 50px;
+
+    /* margin: -10px auto; */
+    /* position: fixed; */
+}
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: .3s;
+    user-select: none;
+    font-size: larger;
+}
+
+.board td:not(.shown):hover {
+    background-color: lightsalmon;
+}
+.board td.shown{
+    background-color: darkgray;
+}
+.game{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid black;
+
+}
+.topText{
+    margin-bottom: 10px;
+    font-size: large;
+    color: darkslateblue;
+}
+h1{
+    font-size: 50px;
+    border-bottom: 10px solid red;
+    padding-bottom: 10px;
+}
+.minesAround1{
+    color:blue;
+}
+.minesAround2{
+    color:green;
+}
+.minesAround3{
+    color:red;
+}
+.minesAround4{
+    color:darkblue;
+}
+.minesAround5{
+    color:brown;
+}
+.minesAround6{
+    color:turquoise;
+}
+.minesAround7{
+    color:black;
+}
+.minesAround8{
+    color:gray;
+}
