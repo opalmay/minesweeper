@@ -10,18 +10,38 @@
 </head>
 
 <body onload="initGame()">
-  <h1>💣Minesweeper💣</h1>
-  <div class="topText"></div>
-  <div class="game">
-    <div class="gameInfo">
-      <span class="lives">asdasd</span>
-      <button class="smiley" onclick="initGame()"></button>
-      <span>asdasd</span>
+  <div class="modal" hidden>
+    <button onclick="closeHighScores()">X</button>
+    <h3></h3>
+  </div>
+  <div class="grid-container">
+    <div class="header">
+      <h1>💣Minesweeper💣</h1>
     </div>
-    <table border="1" cellpadding="10">
+    <div class="gameInfo">
+      <div class="smiley"><button onclick="initGame()"></button></div>
+      <div class="timer"></div>
+      <div class="lives"></div>
+    </div>
+    <div class="game">
+      <div class="gameTableArea">
+        <table>
 
-      <tbody class="board"></tbody>
-    </table>
+          <tbody class="board"></tbody>
+        </table>
+      </div>
+      <div class="difficulties">
+        <button class="prettyButton" onclick="setDifficulty(LEVELS.BEGINNER)">Beginner</button>
+        <button class="prettyButton" onclick="setDifficulty(LEVELS.INTERMEDIATE)">Intermediate</button>
+        <button class="prettyButton" onclick="setDifficulty(LEVELS.EXPERT)">Expert</button>
+      </div>
+      <div class="gameFunctions">
+        <button class="prettyButton" onclick="undo()">Undo</button>
+        <button class="prettyButton" onclick="safeClick()">Safe Click</button>
+        <div>Safe clicks left: <span class="spafeClicksLeft">3</span></div>
+        <button class="prettyButton" onclick="showHighScores()">High Scores</button>
+      </div>
+    </div>
   </div>
   <script src="js/util.js"></script>
   <script src="js/main.js"></script>
